@@ -1,0 +1,310 @@
+body {
+	font-family: Calibri Light;
+	color: #fff;
+	margin: 0; 
+	padding: 0;
+}
+
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+header {
+	display: flex;
+	background-color:#CEECF5;
+	width: 100%;
+	align-items: center;
+	font-size: 220%;
+	color: black;
+}
+ 
+header p{
+	transition: letter-spacing 3s;
+}
+
+header p:hover {
+	letter-spacing: 0.5rem;
+}
+
+header img{
+	width: 5%;
+	padding-left: 1%;
+	padding-right: 3%;
+}
+
+.logo3{
+	margin-left: 85%;
+	width: 9%;
+	margin-top: -5.5%;
+	position: absolute;
+/*Code von https://www.revilodesign.de/blog/css-tricks/bilder-zoom-effekt-beim-hover/*/	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.logo3:hover{
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-o-transform: scale(1.07);
+	transform: scale(1.07);
+}
+/*Code von https://www.revilodesign.de/blog/css-tricks/bilder-zoom-effekt-beim-hover/ Ende*/
+
+footer {
+	display: flex;
+	background-color: #d2d2d2;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2%;
+	padding-bottom: 1%;
+}
+
+footer img{
+	width: 50%;
+}
+
+footer a{
+	text-decoration: none;
+	color: #fff;
+	margin-bottom: 2%;
+	padding-left: 5%;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+.footer1 {
+	flex: 1;
+	font-size: 0;
+	padding-left: 0;
+}
+.footer1 * {
+	font-size: initial;
+}
+
+
+
+}
+.footer2 * {
+	font-size: initial;	
+}
+
+
+
+
+
+/*Dropdown Navigation von https://www.w3schools.com/howto (angepasst)*/
+nav {
+  overflow: hidden;
+  background-color: #d2d2d2;
+  margin-top: 0.1%;
+
+}
+
+nav img {
+	width: 15%;
+	position: absolute;
+	left: 3%;
+}	
+
+nav a {
+  float: left;
+  font-size: 120%;
+  color: black;
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+}
+
+.active {
+  overflow: hidden;
+  background-color: #CEECF5;
+  margin-top: 2%;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 120%;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+nav a:hover .dropbtn {
+  background-color: #CEECF5;
+}
+
+.dropdown{
+	transition: background-color 1s;
+}
+
+.dropdown:hover{
+  	background-color: #CEECF5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 7rem;
+  box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 1rem 1rem;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding-left: 20%;
+  transition: background-color 1s;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*w3schools Ende*/
+
+.wrapper1{
+	display: flex;
+	margin-top: 2%;
+	width: 100%; 
+}
+
+.smallBox {
+	vertical-align: top;
+	flex: 1;
+}
+
+.smallBox img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+/*Code von https://www.revilodesign.de/blog/css-tricks/bilder-zoom-effekt-beim-hover/*/
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+	box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+}
+
+.smallBox img:hover{
+	-webkit-transform: scale(1.07);
+	-moz-transform: scale(1.07);
+	-ms-transform: scale(1.07);
+	-o-transform: scale(1.07);
+	transform: scale(1.07);
+}
+/*Code von https://www.revilodesign.de/blog/css-tricks/bilder-zoom-effekt-beim-hover/ Ende*/
+
+.smallBox video{
+	box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+}
+
+.bigBox {
+	vertical-align: top;
+	flex: 3;
+	font-size: 0;
+	padding-left: 2%;
+	border-top: 0.05rem solid #d2d2d2;
+	color: #787878;
+}
+
+
+.bigBox * {
+	font-size: initial;
+}
+
+.bigBox a{
+	display: border-box;
+	text-decoration: none;
+	background-color: #d2d2d2;
+	color: #787878;
+	border: 0.4rem solid #d2d2d2;
+	border-radius: 0.4rem;
+	transition: border 0.1s;
+	box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+}
+
+.bigBox a:hover {
+	border: 0.6rem solid #d2d2d2;
+	box-shadow: 0rem 0.5rem 1rem 0rem rgba(0,0,0,0.2);
+}
+
+.bigBox h3{
+	font-size: 1.5rem;
+}
+
+.bigBox img{
+	width: 20%;
+	padding-left: 5%;
+}
+
+
+.middleBox{
+	vertical-align: top;
+	flex: 1;
+	font-size: 0;
+	padding-left: 5%;
+	padding-right: 5%;
+	border-bottom: 0.05rem solid #d2d2d2;
+	color: #787878;
+}
+
+.middleBox * {
+	font-size: initial;
+}
+
+.middleBox img{
+	width:100%;
+	opacity: 0.6;
+	transition: opacity 0.5s;
+}
+
+.middleBox img:hover{
+	opacity: 1;
+}
+
+.middleBox h3{
+	font-size: 1.5rem;
+}
+
+
+
+
+
